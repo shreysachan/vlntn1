@@ -372,7 +372,7 @@
     <div id="particles"></div>
     
     <div class="container">
-        <h1>Hi Riddhima, WILL YOU BE MY VALENTINE? 💕</h1>
+        <h1>Hello Harshita WILL YOU BE MY VALENTINE? 💕</h1>
         
         <div class="buttons">
             <button onclick="sayYes()">YES</button>
@@ -380,11 +380,11 @@
         </div>
 
         <div class="message" id="message">
-            Lesgooooo! 💖🔥
+            HELL YEAH! 💖🔥
         </div>
         
         <div class="cat-container">
-            <img src="/cat.png" alt="Cute cat meme">
+            <img id="catImage" src="/cat.png" alt="Cute cat meme">
         </div>
     </div>
 
@@ -404,7 +404,14 @@
 
         function sayYes() {
             const message = document.getElementById('message');
+            const catImage = document.getElementById('catImage');
+            
             message.style.display = 'block';
+            
+            // Change to happy jumping cat GIF
+            catImage.src = 'yippee-cat-kitty.gif';
+            catImage.alt = 'Happy jumping cat';
+            
             createHearts();
             
             // Add screen shake
